@@ -1,10 +1,12 @@
 class Car:
     def __init__(self, make, model, year, color):
-        self.make = make
+        self.make = make   # 4 attributes
         self.model = model
         self.year = year
         self.color = color
         self.is_running = False
+
+        # 3 methods 
 
     def start_engine(self):
         if not self.is_running:
@@ -24,9 +26,10 @@ class Car:
         print(f"{self.year} {self.make} {self.model} ({self.color})")
         print("Status: Running" if self.is_running else "Status: Stopped")
 
-# Creating instances of the Car class
+# Creating instances of the Car class   # 2 instances
 car1 = Car("Toyota", "Camry", 2020, "Blue")
 car2 = Car("Honda", "Accord", 2021, "Red")
+# Create another instance 
 
 # Accessing attributes and calling methods
 car1.start_engine()
