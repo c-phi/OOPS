@@ -26,6 +26,14 @@ class Car:
         print(f"{self.year} {self.make} {self.model} ({self.color})")
         print("Status: Running" if self.is_running else "Status: Stopped")
 
+    # Creating another method to change the color of the car and print
+    
+    def change_color(self,color):
+        self.color = color
+        print(f"The car color is changed to {self.color}")
+
+
+
 # Creating instances of the Car class   # 2 instances
 car1 = Car("Toyota", "Camry", 2020, "Blue")
 car2 = Car("Honda", "Accord", 2021, "Red")
@@ -33,8 +41,13 @@ car2 = Car("Honda", "Accord", 2021, "Red")
 car3 = Car("Mercedes", "Benz", 2023, "white")
 
 # Accessing attributes and calling methods
+
 car1.start_engine()
 car2.start_engine()
+
+car1.change_color("white")
+car2.change_color("blue")
+
 car1.display_info()
 car2.display_info()
 car1.stop_engine()
